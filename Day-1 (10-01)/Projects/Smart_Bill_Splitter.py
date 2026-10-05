@@ -1,0 +1,25 @@
+resturant_name=input("Resturant Name: ")
+bill_amount=int(input("Bill Amount: "))
+tip_percentage=input("Tip percentage: ")
+number_of_people=input("Number Of People: ")
+
+tip_amount=(int(tip_percentage)/100)*int(bill_amount)
+total_bill=tip_amount+int(bill_amount)
+amount_per_person=total_bill/int(number_of_people)
+
+print("===== Bill Splitter =====")
+print(f"Restaurant Name:{resturant_name}")
+print(f"Bill Amount: {bill_amount}")
+print(f"Tip percentage: {tip_percentage}")
+print(f"Number of people: {number_of_people}")
+
+print('------ RECEIPT ------')
+print(f"Restaurant : {resturant_name}")
+print(f"Bill       : {bill_amount:.2f}")
+print(f"Tip {tip_percentage}   : {tip_amount:.2f}")
+print(f"Total      : {total_bill:.2f}")
+print(f"People     : {number_of_people}")
+print(f"Each pays  : {amount_per_person:.2f}")
+print("---------------------")
+
+print("Thank you for dining at Spice Garden!")

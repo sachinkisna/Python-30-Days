@@ -1,0 +1,5 @@
+width=input("Enter Width- ")
+length=input("Enter Length- ")
+area=int(width)*int(length)
+perimeter=2*(eval(width)+eval(length))
+print(f"area is {area} and perimiter is {perimeter}" )
